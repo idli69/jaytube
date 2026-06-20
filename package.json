@@ -1,39 +1,32 @@
 {
-  "name": "jaytube",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.3.0",
-    "class-variance-authority": "^0.7.1",
-    "lucide-react": "^1.17.0",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "tailwind-merge": "^3.6.0",
-    "tailwindcss": "^4.3.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.29.7",
-    "@eslint/js": "^10.0.1",
-    "@rolldown/plugin-babel": "^0.2.3",
-    "@types/babel__core": "^7.20.5",
-    "@types/node": "^24.13.1",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.2",
-    "babel-plugin-react-compiler": "^1.0.0",
-    "eslint": "^10.4.1",
-    "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.6.0",
-    "typescript": "~6.0.3",
-    "typescript-eslint": "^8.60.1",
-    "vite": "^8.0.16"
-  }
+	"name": "jaytube",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@sveltejs/adapter-auto": "^7.0.1",
+		"@sveltejs/kit": "^2.66.0",
+		"@sveltejs/vite-plugin-svelte": "^7.1.2",
+		"@tailwindcss/vite": "^4.3.1",
+		"@types/node": "^24.13.2",
+		"eslint": "^10.5.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.19.0",
+		"globals": "^17.6.0",
+		"prettier": "^3.8.4",
+		"prettier-plugin-svelte": "^4.1.1",
+		"prettier-plugin-tailwindcss": "^0.8.0",
+		"svelte": "^5.56.3",
+		"tailwindcss": "^4.3.1",
+		"vite": "^8.0.16"
+	}
 }
